@@ -1,0 +1,353 @@
+.body1 {
+    display: grid;
+    grid-template-columns: 6.5rem 1.5fr 1.8fr;
+    padding: 0;
+    margin: 0;
+    border-bottom: solid #272727 0.5px;
+    height: 624px;
+}
+
+.body1_left {
+    border-right: solid #272727 0.5px;
+}
+
+.body1_mid1 {
+    margin-top: 3.25rem;
+    margin-left: 2.25rem;
+}
+
+.text_1 {
+    font-weight: 600;
+    font-size: min(1.5rem);
+}
+
+.body1_mid2 {
+    margin-top: 3.2em;
+    margin-left: 2.25rem;
+    width: clamp(18rem, 1rem + 10vw, 40rem);
+    margin-right: 3rem;
+}
+
+.text_2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: min(1rem);
+    line-height: 1.26rem;
+}
+
+.body1_mid3 {
+    margin-top: 12.0em;
+    margin-left: 2.25rem;
+    margin-bottom: 2.4rem;
+    margin-right: min(2rem);
+}
+
+.learn-more {
+    width: 15.2em;
+    height: 4.56rem;
+    border: none;
+    background-color: rgba(130, 118, 254, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+    overflow: hidden;
+    border-radius: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.button-text {
+    color: rgba(247, 249, 249, 1);
+    margin-left: 4rem;
+}
+
+.button-image {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    animation: floatHorizontal 3s ease-in-out infinite;
+}
+
+.icon {
+    width: 39.5px;
+    height: 40px;
+}
+
+.body1_right {
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.body1_img {
+    height: 100%;
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+/* Add media query for smaller devices */
+@media (max-width: 360px) {
+    .body1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .body1_left {
+        display: none;
+    }
+
+    .body1_mid {
+        padding: 0 1rem;
+    }
+
+    .body1_mid1 {
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+
+    .body1_mid2 {
+        margin-top: 1rem;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .body1_mid3 {
+        margin-top: 1rem;
+        margin-left: 0;
+        margin-bottom: 1rem;
+        margin-right: 0;
+    }
+
+    .learn-more {
+        width: 100%;
+        height: 3.56rem;
+        padding: 0 1rem;
+    }
+
+    .button-text {
+        margin-left: 2rem;
+    }
+
+    .body1_right {
+        display: none;
+    }
+
+    .image-div {
+        width: 100%;
+        height: auto;
+    }
+
+    .image-new,
+    .overlay-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .overlay {
+        display: block;
+        padding: 0;
+        width: 100%;
+    }
+
+    .offices-title {
+        right: 20px;
+        font-size: 16px;
+    }
+
+    .country-img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .office-info {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .office-info .country-name,
+    .office-info .address {
+        font-size: 14px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-group {
+        padding-right: 0;
+    }
+
+    .phone,
+    .underline-input,
+    .underline-input1 {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+@keyframes floatHorizontal {
+    0%, 100% { transform: translateX(0); }  
+    50% { transform: translateX(10px); }  
+}
+
+body {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17.07px;
+    text-align: left;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.message {
+    width: 100%;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+
+.contact-form {
+    background-color: white;
+    width: 600px;
+    max-width: 100%;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group {
+    flex: 1;
+    padding-right: 25px;
+}
+
+.form-group:first-child {
+    padding-left: 0;
+}
+
+.form-group:last-child {
+    padding-right: 0;
+}
+
+.pc {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+    width: 35px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background-color: transparent;
+    outline: none;
+    color: #ccc;
+}
+
+.para {
+    margin-bottom: 25px;
+    margin-top: 35px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+    color: #727272;
+}
+
+.phone {
+    width: 235px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+    color: #ccc;
+    margin-top: 50px;
+    padding: 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background-color: transparent;
+    outline: none;
+}
+
+.phone::placeholder {
+    color: #ccc;
+    width: 200px;
+}
+
+.form-group1 {
+    margin-bottom: 90px;
+    flex: 1;
+    width: 200px;
+}
+
+.option {
+    line-height: 17.07px;
+    text-align: left;
+    color: #ccc;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background-color: transparent;
+    outline: none;
+    color: #ccc;
+    padding-right: 25px;
+    margin-top: 80px;
+    padding-top: 25px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.underline-input1 {
+    width: 287px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+    color: #ccc;
+    margin-top: 50px;
+    padding: 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background-color: transparent;
+    outline: none;
+}
+
+.underline-input {
+    width: 100%;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+    color: #ccc;
+    padding: 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background-color: transparent;
+    outline: none;
+}
+
+.underline-input:focus {
+    border-bottom: 2px solid #333;
+}
+
+.underline-input::placeholder {
+    color: #ccc;
+    width: 200px;
+}
+
+textarea.underline-input {
+    height: 80px;
+    resize: none;
+}

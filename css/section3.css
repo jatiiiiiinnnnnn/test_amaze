@@ -1,0 +1,122 @@
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.section-3{
+    
+    height: 34rem;
+    border-bottom: 0.5px solid black;
+
+    display: grid;
+    grid-template-columns: 107px 1fr;
+}
+.right-area1{
+    display: grid;
+    grid-template-rows: 9rem 1fr;
+    border-left: 0.5px solid #272727;
+}
+.righttop1{
+    display:grid;
+    grid-template-columns: 1fr 107px;
+}
+.text{
+    margin-left: 9rem;
+    margin-top: 2rem;
+}
+.text p{
+
+    font-weight: 600;
+    font-size: 1.5rem;
+
+}
+.righttopspace1{
+    border-left: 0.5px solid #272727;
+}
+
+.rightbottom1{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+
+.ticklist, .ticklist1, .ticklist2, .ticklist3{
+    margin-left: 5rem;
+    margin-top: 1rem;
+}
+
+.checklist {
+    list-style-type: none;
+    padding: 0;
+}
+
+.checklist li {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 20px;  */
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    background-color: rgba(130, 118, 254, 1);
+    /* position: absolute; */
+    margin-right: 10px; 
+}
+
+.checklist img{
+    width: 24px;
+    height: 24px;
+}
+.ticklist, .ticklist1, .ticklist2 ,.ticklist3{
+    display: grid;
+    grid-template-columns: 33px 1fr;
+    /* position: absolute; */
+    height: 33px;
+    gap:1.5rem;
+    /* left:2.873rem; */
+    /* top:0;
+    left:0; */
+
+}
+ .ticklist img, .ticklist1 img, .ticklist2 img ,.ticklist3 img{
+    height: 33px;
+    width: 33px;
+    /* position: absolute; */
+    top:0;
+    left:0;
+ }
+ .textdiv{
+    max-width: fit-content;
+    text-wrap: nowrap;
+    /* position: absolute; */
+    /* display: inline-block; */
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 1.25rem;
+ }
+ .sec3img{
+    position: relative;
+    background-size: cover;
+    
+    height:24.99rem;
+ }
+ .sec3img img{
+    object-fit: cover;
+    height: 100%;
+    width:100%;
+    transition: transform 0.3s ease;
+  
+ }
+ .sec3img img:hover{
+    transform: scale(1.02);
+ }
+ @media (max-width:1000px){
+    .section-3{
+        grid-template-columns: 0 1fr;
+    }
+ }

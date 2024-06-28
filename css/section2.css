@@ -1,0 +1,138 @@
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.section2-container {
+    display: grid;
+    background-color: #f6f6f6;
+    width: 100%;
+    margin-top: 32px;
+    border-top: solid 0.5px #272727;
+    border-bottom: solid 0.5px #272727;
+    grid-template-columns: 107px 1fr;
+}
+
+.left-space {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-space {
+    border-left: solid 0.5px #272727;
+    display: flex;
+    flex-direction: column;
+    padding-right: 32px; /* Ensure the right padding */
+}
+
+.industries-title {
+    display: flex;
+    align-items: center; 
+    padding-left: 16px; 
+    height: 126px;
+}
+
+.industries-title p {
+    margin: 0; 
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.industries-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 213px;
+    gap: 32px;
+  
+    border-top: solid 0.5px #272727;
+    flex-grow: 1; 
+    padding-bottom: 32px;
+}
+
+.grid-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.grid-item:hover img {
+    transform: scale(1.05); /* Scale image on hover */
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.overlay p {
+    margin: 0;
+}
+
+.overlay img {
+    width: 50px;
+    height: auto;
+}
+
+.para {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.overlay-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+@media (max-width: 1200px) {
+    .industries-grid {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+@media (max-width: 992px) {
+    .industries-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    .section2-container {
+        grid-template-columns: 1fr; 
+    }
+
+    .industries-grid {
+        grid-template-columns: 1fr; 
+        gap: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .overlay {
+        padding: 10px;
+    }
+
+    .overlay img {
+        width: 20px; 
+    }
+}

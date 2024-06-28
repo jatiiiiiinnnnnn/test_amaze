@@ -1,0 +1,188 @@
+.new-section1{
+    width: 100%;
+    height: 40rem;
+    border-bottom: 0.5px solid black;
+    display: grid;
+    grid-template-columns: 107px 1fr;
+}
+
+.left{
+    border-right: 0.5px solid black;
+}
+
+.right{
+    display: grid;
+    grid-template-columns: 1fr 33.375rem;
+    height: 40rem;
+}
+.pc option {
+    font-weight: bold; /* Make select options bold */
+}
+
+.new-form{
+
+    height: 40rem;
+    padding-left: 36px;
+}
+.pic, .pic img{
+    height: 100%;
+     
+    transition: transform 0.3s ease;
+}
+.pic img:hover{
+    transform: scale(1.02);
+}
+
+.texts{
+    padding-top: 52px;
+    font-family: "Montserrat", sans-serif;
+    
+}
+.contact-form {
+    background-color: white;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 50px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 58px;
+    align-items: flex-start; 
+    min-width: 0;
+}
+
+
+.form-group {
+    flex: 1;
+    padding-right: 55px;
+    align-items: center; 
+}
+
+.form-group1{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    padding-right: 55px;
+    flex: 1;
+}
+
+.underline-input {
+    width: 100%;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+    color: #ccc;
+    padding: 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background-color: transparent;
+    outline: none;
+}
+
+.pc{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+    width: 40px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background-color: transparent;
+    outline: none;
+    color: #ccc;
+    -webkit-appearance: none; /* Remove default styling for webkit browsers */
+    -moz-appearance: none; /* Remove default styling for firefox browsers */
+    appearance: none; /* Remove default styling */
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="gray" d="M7 10l5 5 5-5z"/></svg>') no-repeat right 5px top 50%;
+    background-size: 16px;
+}
+
+.phone {
+    flex: 1;
+    max-width: 100rem;
+ 
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+    color: #ccc;
+    
+    padding: 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background-color: transparent;
+    outline: none;
+}
+.underline-input:focus,
+.phone:focus {
+    font-weight: bold;
+    color: black; /* Change color to make it more readable */
+}
+
+/*@media (max-width: 992px) {
+    .form-group, .form-group {
+        flex-basis: 100%;
+        padding-right: 10px;
+    }
+
+    .phone {
+        min-width: 100px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .phone {
+        min-width: 80px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .phone {
+        min-width: 60px; 
+    }
+}*/
+
+.learn-more-button {
+    padding-top: 64.5px;
+    padding-left: 75px;
+    /*position: absolute;*/
+    bottom: 0;
+}
+
+.learn-more {
+    width: 370px;
+    height: 73px;
+    border: none;
+    background-color: rgba(130, 118, 254, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    overflow: hidden;
+    border-radius: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.button-text {
+    color: rgba(247, 249, 249, 1);
+}
+
+.button-image {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    animation: floatHorizontal 3s ease-in-out infinite;
+ 
+}
+@keyframes floatHorizontal {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(10px); }
+}

@@ -1,0 +1,250 @@
+
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.section4{
+    /* border-bottom: 0.5px solid black; */
+    display: grid;
+    grid-template-rows: 7.875rem 1fr;
+    overflow: hidden;
+
+}
+.sec4top{
+    border-bottom: 0.5px solid black;
+    display: grid;
+    grid-template-columns: 107px 1fr;
+
+}
+.top2{
+    border-left: 0.5px solid black;
+
+}
+.top2txt{
+    margin-top: 3rem;
+    margin-left: 5px;
+}
+.top2txt p{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.sec4bottom{
+    height:1256px;
+    border-bottom: 0.5px solid black;
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 107px 1fr;
+    background-color: #F6F6F6;
+}
+.b-right{
+    border-left: 0.5px solid black;
+
+}
+.timeline-items{
+    position: relative;
+}
+.timeline-section{
+    padding: 0%;
+    margin: 0%;
+}
+.timeline-section::before{
+    content:'';
+    position: absolute;
+    width: 2px;
+    height:1256px;
+    background-color: #272727;
+    left: 50%;
+    /* padding: 0; */
+    margin: 0;
+    
+}
+.imgtl1 ,.imgtl2,.imgtl3 ,.imgtl4{
+    width: 22.18rem;
+    height:19.62rem;
+    display: inline-block;
+    position: absolute;
+    transition: transform 0.3s ease;
+}
+.imgtl1:hover ,.imgtl2:hover,.imgtl3:hover ,.imgtl4:hover{
+    transform: scale(1.02);
+}
+
+.p1-tm1{
+    position: absolute;
+    top: 10%;
+    left:60%;
+    font-weight: 500;
+    font-size: 2rem;
+    display: inline-block;
+    
+}
+.p1-tm3{
+    position: absolute;
+    top: 59.8%;
+    left:60%;
+    font-weight: 500;
+    font-size: 2rem;
+    display: inline-block;
+}
+
+.p1-tm2{
+    position: absolute;
+    top: 35%;
+    left:28%;
+    font-weight: 500;
+    font-size: 2rem;
+    display: inline-block;
+}
+.p1-tm4{
+    position: absolute;
+    top: 83%;
+    left:28%;
+    font-weight: 500;
+    font-size: 2rem;
+    display: inline-block;
+}
+
+.p2-tm1{
+    max-width: 258px;
+    display: inline-block;
+    font-size: 1rem;
+    font-family: Oxygen;
+    font-weight: 400;
+    left:28%;
+    top:10%;
+    position:absolute;
+} 
+.p2-tm2{
+    max-width: 258px;
+    display: inline-block;
+    font-size: 1rem;
+    font-family: Oxygen;
+    font-weight: 400;
+    left: 60%;
+    top: 35%;
+    position:absolute;
+} 
+.p2-tm3{
+    max-width: 258px;
+    display: inline-block;
+    font-size: 1rem;
+    font-family: Oxygen;
+    font-weight: 400;
+    left:28%;
+    top: 59.8%;
+    position:absolute;
+} 
+.p2-tm4{
+    max-width: 258px;
+    display: inline-block;
+    font-size: 1rem;
+    font-family: Oxygen;
+    font-weight: 400;
+    left: 60%;
+    top: 83%;
+    position:absolute;
+} 
+.imgtl1{
+    top:0;
+    right: 0;
+}
+.imgtl3{
+    top:39.25rem;
+    right: 0;
+
+}
+.imgtl2{
+    top:19.62rem;
+    left: -107.5px;
+}
+.imgtl4{
+    top:58.81rem;
+    left:  -107.5px;
+
+    
+
+}
+
+.timeline-dot{
+    width: 1.125rem;
+    height: 1.125rem;
+    position: absolute;
+    left:49.48%;
+    display: inline-block;
+    z-index: 10;
+    /* top:1rem; */
+    
+    
+}
+.timeline-dot1{
+    width: 0.625rem;
+    height: 0.625rem;
+    position: absolute;
+    left:49.75%;
+    top: 9.3rem;
+    z-index: 1;
+}
+.timeline-dot2{
+    width: 0.625rem;
+    height: 0.625rem;
+    position: absolute;
+    left:49.75%;
+    top: 27.9rem;
+    z-index: 1;
+}
+.timeline-dot3{
+    width: 0.625rem;
+    height: 0.625rem;
+    position: absolute;
+    left:49.75%;
+    top: 47.6rem;
+    z-index: 1;
+}
+.timeline-dot4{
+    width: 0.625rem;
+    height: 0.625rem;
+    position: absolute;
+    left:49.75%;
+    top: 66rem;
+    z-index: 1;
+}
+@media (max-width:1100px){
+    .p1-tm1{
+        top: 8%;
+        left:24%;
+        
+    }
+    .p1-tm3{
+        top: 58%;
+        left:24%;
+    }
+    
+    .p1-tm2{
+        top: 33%;
+        left:60%;
+    }
+    .p1-tm4{
+        top: 82%;
+        left:60%;
+    }
+    
+    .p2-tm1{
+        left:24%;
+        top:12%;
+        
+    } 
+    .p2-tm2{
+        left: 60%;
+        top: 37%;
+    } 
+    .p2-tm3{
+        left:24%;
+        top: 62%;
+    } 
+    .p2-tm4{
+        left: 60%;
+        top: 86%;
+    } 
+}

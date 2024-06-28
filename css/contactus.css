@@ -1,0 +1,199 @@
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.image-div{
+    position: relative;
+    width: 85.8125rem;
+    height: 25.185rem;
+}
+
+.image-new{
+    width: 85.8125rem;
+    height: 25.185rem;
+}
+
+.overlay-img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 0.95;
+    width: 85.8125rem;
+    height: 25.185rem;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 60px;
+    
+    width: 80.8125rem;
+    height: 25.185rem;
+    display: grid;
+    grid-template-columns: repeat(5, 0.5fr);
+    align-items: center;
+    gap: 0px;
+    padding: 0 20px;
+    padding-top: 20px;
+}
+
+.offices-title{
+    position: absolute;
+    top: 35px;
+    right: 50px;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.country-img{
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+.country-img:hover {
+    transform: scale(1.5);
+}
+
+.canada{
+    margin-top: 15px;
+}
+
+.overlay .country-name{
+    color: white;
+    font-size: 20px;
+    font-family: "Montserrat",sans-serif;
+    margin-bottom: 1rem;
+}
+
+.address{
+    font-size: 14px;
+    color: white;
+    font-family: "Montserrat",sans-serif;
+    line-height: 1;
+}
+.office-info {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    padding: 0px 2px; /* Reduce horizontal padding */
+    margin: 0;
+    width: 13rem;
+}
+
+@media (max-width: 1200px) {
+    .overlay {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .offices-title {
+        font-size: 22px;
+    }
+
+    .country-img {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .overlay .country-name {
+        font-size: 18px;
+    }
+
+    .address {
+        font-size: 13px;
+    }
+
+    .office-info {
+        width: 12rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .overlay {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .offices-title {
+        font-size: 20px;
+    }
+
+    .country-img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .overlay .country-name {
+        font-size: 16px;
+    }
+
+    .address {
+        font-size: 12px;
+    }
+
+    .office-info {
+        width: 10rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .overlay {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .offices-title {
+        font-size: 18px;
+    }
+
+    .country-img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .overlay .country-name {
+        font-size: 14px;
+    }
+
+    .address {
+        font-size: 11px;
+    }
+
+    .office-info {
+        width: 8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .overlay {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    }
+
+    .offices-title {
+        font-size: 16px;
+    }
+
+    .country-img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .overlay .country-name {
+        font-size: 12px;
+    }
+
+    .address {
+        font-size: 10px;
+    }
+
+    .office-info {
+        width: 100%;
+    }
+}
