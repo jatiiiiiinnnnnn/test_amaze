@@ -89,7 +89,7 @@ p{
 .talentconsulting-right{
     height: 680px;
     width: 100%;
-   background-color: black;
+    
     margin-right: 32px;
     
     
@@ -98,11 +98,9 @@ p{
   height: 100%;
   width: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
+
 }
-.talentconsulting-right img:hover{
-    transform: scale(1.02);
-}
+
 
 
 .number{

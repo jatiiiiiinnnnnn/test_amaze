@@ -92,7 +92,7 @@
     object-fit: cover;
     height:100%;
     width: 100%;
-    transition: transform 0.3s ease;
+    
 }
 @media  (max-width: 1000px) {
     .body1{
@@ -100,11 +100,7 @@
     }
     
 }
-.body1_right:hover .body1_img{
- 
-    transform: scale(1.02);
 
-}
 /* @media  (min-width: 1400px){
     .text_1{
         font-size: 2rem;

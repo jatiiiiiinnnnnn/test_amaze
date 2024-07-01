@@ -53,8 +53,8 @@
 }
 .b2l2d1t2 ul, .b2l3d1t2 ul, .b2l4d1t2 ul, .b2l5d1t2 ul{
     padding:0%;
-    list-style-position: inside;
-    list-style-type: circle;
+   /* list-style-position: inside;
+    list-style-type: circle;*/
     font-family: Oxygen;
     font-weight: 400;
     font-size: 1rem;

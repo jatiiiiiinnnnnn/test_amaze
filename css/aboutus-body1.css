@@ -50,8 +50,9 @@
 .body1_img{
     height:100%;
     width: 100%;
-    transition: transform 0.3s ease;
+    position: absolute;
     height: 30rem;
+    object-fit: cover;
    
 }
 
@@ -63,8 +64,4 @@
         font-size: 0.8rem;
     }
     
-}
-.body1_right:hover .body1_img{
-    transform: scale(1.05);
-
 }
